@@ -21,10 +21,10 @@ function ageTest(x,y) {
    console.log(Warren.firstname + " is older");
  }
 };
-
-ageTest(Biden.age, Warren.age);
-
-console.log(Warren.age > Biden.age);
+// 
+// ageTest(Biden.age, Warren.age);
+//
+// console.log(Warren.age > Biden.age);
 
 
 //just leave these objects and functions alone above
@@ -32,8 +32,8 @@ console.log(Warren.age > Biden.age);
 //everything below is building tic tac toe.
 //first we need to create the board a 3x3 so let's make that an array
 
-const board = [0,1,2,3,4,5,6,7,8];
-
-console.log(board[0]);
+// const board = [0,1,2,3,4,5,6,7,8];
+//
+// console.log(board[0]);
 
 //if someone clicks on a position an x must appear.

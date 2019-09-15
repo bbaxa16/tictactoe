@@ -1,7 +1,5 @@
 $(function(){ // window onload
 
-console.log('hi this is my jquery page.');
-
 //testing on click function
 // $(".marker").click(function() {
 //   alert("you did it bitch")
@@ -11,6 +9,8 @@ console.log('hi this is my jquery page.');
 $("#0").click(function() {
   $("#0").css("background-color", "yellow");
   checkFirstRow();
+  checkSecondRow();
+  checkThirdRow();
 
 });
 
@@ -21,11 +21,28 @@ $("#0").click(function() {
 // three of the same variable in the first row.
 
 const checkFirstRow = function() {
-  if ($("#0").children().html(), $("#1").children().html(), $("#2").children().html() === "X" ){
-    console.log("They all say X");
+  if ($("#0").children().html(), $("#1").children().html(), $("#2").children().html() === "X"){
+    console.log("Row 1: They all say X");
   } else {
-    console.log("They do not all say X");
+    console.log("Row 1: They do not all say X");
   }
 }
+
+const checkSecondRow = function() {
+  if ($("#3").children().html(), $("#4").children().html(), $("#5").children().html() === "X"){
+    console.log("Row 2: They all say X");
+  } else {
+    console.log("Row 2: They do not all say X");
+  }
+}
+
+const checkThirdRow = function() {
+  if ($("#6").children().html(), $("#7").children().html(), $("#8").children().html() === "X"){
+    console.log("Row 3: They all say X");
+  } else {
+    console.log("Row 3: They do not all say X");
+  }
+}
+
 
 }) //end of window onload
