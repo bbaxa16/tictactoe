@@ -21,10 +21,10 @@ $("#0").click(function() {
 // three of the same variable in the first row.
 
 const checkFirstRow = function() {
-  if ($("#0").children().html(), $("#1").children().html(), $("#2").children().html() === "X"){
-    console.log("Row 1: They all say X");
+  if ($("#0").children().html() === $("#1").children().html()&& $("#1").children().html() === $("#2").children().html()){
+    console.log("Row 1: They are equal");
   } else {
-    console.log("Row 1: They do not all say X");
+    console.log("Row 1: They are not equal");
   }
 }
 
@@ -46,17 +46,29 @@ const checkThirdRow = function() {
 // //testing it with just an array and not the DOM,
 // I think an array might be the best way,
 // if we can figure out how to assign each div or marker to an array.
-const board = ["x","x","a;sdlfkj",3,4,5,6,7,8];
-console.log(board[4]);
+const board = ["1","1","1",3,4,5,6,7,8];
 
+//checks the first three spots in the array to see if they equal x
+
+// const arrayChecktest = function() {
+//   console.log("this is an array function");
+//   if (board[0] === "x" && board[1] === "x" && board[2] === "x"){
+//     console.log("poop");
+//   } else {
+//     console.log("double poop");
+//   }
+// }
+
+
+//made a function that will check whether or not they are all true.
 const arrayCheck = function() {
-  console.log("this is an array function");
-  if (board[0] === "x" && board[1] === "x" && board[2] === "x"){
+  if (board[0] === board[1] && board[1] === board[2]){
     console.log("poop");
   } else {
     console.log("double poop");
   }
 }
+
 
 arrayCheck();
 
