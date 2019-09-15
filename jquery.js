@@ -7,7 +7,6 @@ $(function(){ // window onload
 
 
 $("#0").click(function() {
-  $("#0").css("background-color", "yellow");
   checkFirstRow();
   checkSecondRow();
   checkThirdRow();
@@ -30,17 +29,17 @@ const checkFirstRow = function() {
 
 const checkSecondRow = function() {
   if ($("#3").children().html(), $("#4").children().html(), $("#5").children().html() === "X"){
-    console.log("Row 2: They all say X");
+    console.log("Row 2: They are equal");
   } else {
-    console.log("Row 2: They do not all say X");
+    console.log("Row 2: They are not equal");
   }
 }
 
 const checkThirdRow = function() {
   if ($("#6").children().html(), $("#7").children().html(), $("#8").children().html() === "X"){
-    console.log("Row 3: They all say X");
+    console.log("Row 3: They are equal");
   } else {
-    console.log("Row 3: They do not all say X");
+    console.log("Row 3: They are not equal");
   }
 }
 // //testing it with just an array and not the DOM,
