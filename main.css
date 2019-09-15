@@ -1,0 +1,19 @@
+.vertical {
+    border-left: 6px solid black;
+    height: 200px;
+    position:absolute;
+    left: 50%;
+}
+.vertical2 {
+    border-left: 6px solid black;
+    height: 200px;
+    position:absolute;
+    left: 40%;
+}
+.horizontal {
+  border-left: 6px solid black;
+  height: 400px;
+  width: 100px;
+  position: absolute;
+  left: 10%;
+}
