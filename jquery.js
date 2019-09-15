@@ -43,6 +43,16 @@ const checkThirdRow = function() {
     console.log("Row 3: They do not all say X");
   }
 }
+// //testing it with just an array and not the DOM,
+// I think an array might be the best way,
+// if we can figure out how to assign each div or marker to an array.
+const board = [0,1,2,3,4,5,6,7,8];
+console.log(board[4]);
 
+const arrayCheck = function() {
+  console.log("this is an array function");
+}
+
+arrayCheck();
 
 }) //end of window onload
