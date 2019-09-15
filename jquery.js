@@ -46,11 +46,16 @@ const checkThirdRow = function() {
 // //testing it with just an array and not the DOM,
 // I think an array might be the best way,
 // if we can figure out how to assign each div or marker to an array.
-const board = [0,1,2,3,4,5,6,7,8];
+const board = ["x","x","a;sdlfkj",3,4,5,6,7,8];
 console.log(board[4]);
 
 const arrayCheck = function() {
   console.log("this is an array function");
+  if (board[0] === "x" && board[1] === "x" && board[2] === "x"){
+    console.log("poop");
+  } else {
+    console.log("double poop");
+  }
 }
 
 arrayCheck();
